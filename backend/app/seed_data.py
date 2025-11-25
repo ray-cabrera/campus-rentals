@@ -28,11 +28,11 @@ def seed_database():
 
     print("Seeding database with Princeton student data...")
 
-    # Create users
+    # Create users (passwords truncated to 72 bytes for bcrypt)
     users_data = [
         {
             "email": "emily.chen@princeton.edu",
-            "password": "demo123",
+            "password": "demo123"[:72],
             "full_name": "Emily Chen",
             "college": "Butler College",
             "phone": "(609) 555-0101",
@@ -41,7 +41,7 @@ def seed_database():
         },
         {
             "email": "marcus.johnson@princeton.edu",
-            "password": "demo123",
+            "password": "demo123"[:72],
             "full_name": "Marcus Johnson",
             "college": "Whitman College",
             "phone": "(609) 555-0102",
@@ -50,7 +50,7 @@ def seed_database():
         },
         {
             "email": "sarah.williams@princeton.edu",
-            "password": "demo123",
+            "password": "demo123"[:72],
             "full_name": "Sarah Williams",
             "college": "First Campus Center",
             "phone": "(609) 555-0103",
@@ -59,7 +59,7 @@ def seed_database():
         },
         {
             "email": "alex.patel@princeton.edu",
-            "password": "demo123",
+            "password": "demo123"[:72],
             "full_name": "Alex Patel",
             "college": "Rockefeller College",
             "phone": "(609) 555-0104",
@@ -68,7 +68,7 @@ def seed_database():
         },
         {
             "email": "olivia.martinez@princeton.edu",
-            "password": "demo123",
+            "password": "demo123"[:72],
             "full_name": "Olivia Martinez",
             "college": "Mathey College",
             "phone": "(609) 555-0105",
@@ -77,7 +77,7 @@ def seed_database():
         },
         {
             "email": "james.kim@princeton.edu",
-            "password": "demo123",
+            "password": "demo123"[:72],
             "full_name": "James Kim",
             "college": "Forbes College",
             "phone": "(609) 555-0106",
@@ -86,7 +86,7 @@ def seed_database():
         },
         {
             "email": "demo@princeton.edu",
-            "password": "demo123",
+            "password": "demo123"[:72],
             "full_name": "Demo User",
             "college": "Wilson College",
             "phone": "(609) 555-0199",
